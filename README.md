@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of ernestdefoe/marquee.** Not for installation: use [Packagist](https://packagist.org/packages/ernestdefoe/marquee) or the [upstream repository](https://github.com/ernestdefoe/marquee).
 
-**1** versions archived · Latest: [`v1.0.0`](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.0.0) · License: `MIT` · Flarum: `^2.0`
+**0** versions archived · Latest: [`v1.1.0`](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.1.0) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| `v1.0.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.0.0) |
+| — | — | — | — |
 
 Catalog entry: [packages/ernestdefoe-marquee.json](https://github.com/flarchive/archive-index/blob/main/packages/ernestdefoe-marquee.json)
 
