@@ -1,0 +1,157 @@
+ernestdefoe-marquee:
+  admin:
+    tmdb_token_label: Jeton d'accès en lecture de l'API TMDB
+    tmdb_token_help: "Les films et les séries viennent de The Movie Database. <a>Créez un jeton dans les paramètres API de TMDB</a> et collez ici le long API Read Access Token. Il reste sur le serveur."
+    igdb_label: Identifiants d'application Twitch pour IGDB
+    igdb_help: "Les jeux viennent d'IGDB, géré par Twitch. <a>Enregistrez une application dans la console développeur Twitch</a> (type de client Confidential), créez un secret client, puis collez les deux ici. Le secret reste sur le serveur. IGDB est gratuit pour les forums non commerciaux ; un forum commercial a besoin d'un partenariat avec IGDB."
+    igdb_client_id: Client ID
+    igdb_client_secret: Secret client
+    deepl_label: Clé API DeepL (facultative)
+    deepl_help: "Les descriptions de jeux viennent de Wikipédia dans la langue des données quand il a le jeu. Le reste des données de jeux d'IGDB et la plupart des résumés de livres d'Open Library sont en anglais. Avec une clé DeepL, Marquee traduit les résumés, genres et sujets des jeux et des livres dans la langue des données, une fois par titre, et garde la traduction. <a>Obtenez une clé API DeepL gratuite</a> : l'offre gratuite traduit 500 000 caractères par mois, assez pour des milliers de titres. La clé reste sur le serveur."
+    language_label: Langue des données
+    language_help: "La langue des titres, résumés et genres des films et séries, sous forme de code comme fr, fr-FR ou pt-BR. Laissez vide pour suivre la langue par défaut du forum. Les données de jeux d'IGDB sont en anglais (seuls des noms japonais et coréens existent) : les descriptions de jeux viennent de Wikipédia dans cette langue quand il a le jeu, et le reste est traduit avec une clé DeepL ; les albums gardent les titres des artistes, et les titres, couvertures et éditeurs des livres la suivent quand Open Library a une édition dans cette langue (les résumés de livres sont surtout en anglais). Les titres déjà liés changent de langue à leur prochaine mise à jour."
+    language_placeholder: "La langue du forum"
+    list_posters_label: Afficher les affiches dans la liste des discussions
+    list_posters_help: "Une petite affiche à côté de chaque discussion liée. Désactivez-la si une autre extension, comme FoF Discussion Thumbnail, affiche déjà des miniatures."
+    tags_label: Quelles étiquettes utilisent quelle source
+    tags_help: "Quand quelqu'un ouvre une discussion sous l'une de ces étiquettes, le champ du titre cherche dans cette source et la discussion affiche la fiche du titre dans son en-tête. Les autres étiquettes gardent l'éditeur habituel."
+    source_none: Discussion normale
+    source_movie: Films (TMDB)
+    source_tv: Séries (TMDB)
+    source_game: Jeux (IGDB)
+    source_music: Albums de musique (Deezer, sans clé)
+    source_book: Livres (Open Library, sans clé)
+
+  api:
+    link_invalid: Ce titre n'a pas pu être lié. Choisissez-le de nouveau dans la liste.
+    link_unavailable: La source du titre ne répond pas, le titre n'a donc pas été lié. Réessayez dans un instant.
+
+  forum:
+    kind:
+      movie: Film
+      tv: Série
+      game: Jeu
+      music: Album
+      book: Livre
+
+    picker:
+      placeholder_movie: Rechercher un film par son titre
+      placeholder_tv: Rechercher une série par son titre
+      placeholder_game: Rechercher un jeu par son titre
+      placeholder_music: Rechercher un album ou un artiste
+      placeholder_book: Rechercher un livre par titre, auteur ou ISBN
+      results_from: "Résultats de {source}"
+      escape_hint: Échap garde un titre simple
+      unavailable: "{source} ne répond pas pour le moment. Vous pouvez quand même publier avec un titre simple."
+
+    composer:
+      linked: "Lié à {title} · {source}"
+      remove_link: Retirer le lien
+
+    scope:
+      season_label: Saison
+      episode_label: Épisode
+      whole_show: Toute la série
+      whole_season: Toute la saison
+      loading: Chargement des épisodes…
+      season_option: "Saison {number} ({year})"
+      episode_option: "É{number} · {title}"
+
+    title:
+      season: "{base} Saison {number}"
+      episode: "{base} S{season}E{episode} : {name}"
+
+    meta:
+      runtime_hours: "{hours} h {minutes} min"
+      runtime_minutes: "{minutes} min"
+      runtime_hours_only: "{hours} h"
+      seasons_count: "{count, plural, one {# saison} other {# saisons}}"
+      episodes_count: "{count, plural, one {# épisode} other {# épisodes}}"
+      season_episode: "Saison {season}, épisode {episode}"
+      episode_code: "É{episode}"
+      episode_label: "É{episode} · {name}"
+      full_episode_label: "S{season}É{episode} · {name}"
+      tracks_count: "{count, plural, one {# titre} other {# titres}}"
+      record_album: Album
+      record_single: Single
+      record_ep: EP
+      record_compile: Compilation
+      first_published: "Première parution en {year}"
+      pages_count: "{count, plural, one {# page} other {# pages}}"
+      editions_count: "{count, plural, one {# édition} other {# éditions}}"
+
+    credits:
+      director: Réalisation
+      writer: Scénario
+      based_on: D'après
+      creator: Créée par
+      network: Chaîne
+      status: Statut
+      directed_by: Réalisé par
+      written_by: Écrit par
+      developer: Développeur
+      publisher: Éditeur
+      series: Série
+      artist: Artiste
+      label: Label
+      author: Auteur
+      original_title: Titre original
+      isbn: ISBN
+
+    hero:
+      user_score: Note des utilisateurs TMDB
+      season_score: Note de la saison sur TMDB
+      episode_score: Note de l'épisode sur TMDB
+      cast: Distribution
+      guest_stars: Invités
+      seasons: Saisons
+      this_discussion: Cette discussion
+      season_failed: Cette saison n'a pas pu être chargée pour le moment.
+      view_on: "Voir sur {source}"
+      trailer: Bande-annonce
+      episode_details: Détails de l'épisode
+      discuss_show: Discuter de toute la série
+      critic_rating: Note de la presse
+      member_rating: Note des membres IGDB
+      time_to_beat: Durée de vie
+      ttb_hastily: Histoire principale
+      ttb_normally: Histoire + extras
+      ttb_completely: Complétionniste
+      hours: "{count, plural, one {# heure} other {# heures}}"
+      screenshots: Captures d'écran
+      tracklist: Liste des titres
+      explicit: Explicite
+      fans: "{count} fans sur Deezer"
+      listen_on: "Écouter sur {source}"
+      attribution_tmdb: Données et images de TMDB. Ce produit n'est ni approuvé ni certifié par TMDB.
+      attribution_igdb: Données de jeux d'IGDB.com
+      attribution_deezer: Données et pochettes d'albums de Deezer
+      attribution_open_library: Données et couvertures de livres d'Open Library
+      from_wikipedia: "Description de <a>Wikipédia</a> (<license>CC BY-SA</license>)"
+      translated_deepl: Traduit par DeepL
+      authors: Auteurs
+      book_rating: "{rating} · {count} notes sur Open Library"
+      want_to_read: "{count} veulent le lire"
+
+    modal:
+      title: "S{season} · E{episode}  {name}"
+      badge: "{title} · Saison {season}, épisode {episode}"
+      score: "{score} % sur TMDB"
+      previous: Précédent
+      next: Suivant
+      discuss_episode: Discuter de cet épisode
+
+    link:
+      change: Modifier le titre lié
+      add: Lier un titre
+      title: Titre lié
+      none: Cette discussion n'est liée à aucun titre.
+      remove: Retirer
+      search_label: Chercher un autre titre
+      rename: "Renommer la discussion en {title}"
+      save: Enregistrer
+      saved: Le titre lié a été mis à jour.
+
+    list:
+      season: "Saison {number}"
+      episode: "S{season}E{episode}"
