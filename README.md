@@ -2,24 +2,13 @@
 
 > **Read-only archive of released versions of ernestdefoe/marquee.** Not for installation: use [Packagist](https://packagist.org/packages/ernestdefoe/marquee) or the [upstream repository](https://github.com/ernestdefoe/marquee).
 
-**24** versions archived · Latest: [`v1.10.0`](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.10.0) · License: `MIT` · Flarum: `^2.0`
+**0** versions archived · Latest: [`v1.11.0`](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.11.0) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| `v1.0.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.0.0) |
-| `v1.1.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.1.0) |
-| `v1.2.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.2.0) |
-| `v1.3.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.3.0) |
-| `v1.3.1` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.3.1) |
-| `v1.3.2` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.3.2) |
-| `v1.4.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.4.0) |
-| `v1.4.1` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.4.1) |
-| `v1.5.0` | 2026-10-15 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.5.0) |
-| `v1.6.0` | 2026-10-16 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-marquee/tree/archive/v1.6.0) |
-
-[View all 24 versions](https://github.com/flarchive/ernestdefoe-marquee/tags)
+| — | — | — | — |
 
 Catalog entry: [packages/ernestdefoe-marquee.json](https://github.com/flarchive/archive-index/blob/main/packages/ernestdefoe-marquee.json)
 
