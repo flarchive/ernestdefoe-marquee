@@ -1,0 +1,51 @@
+.MarqueeTagSources-table {
+  margin-top: 8px;
+  border-collapse: collapse;
+
+  td {
+    padding: 6px 16px 6px 0;
+    vertical-align: middle;
+  }
+
+  // Fixed columns: on phones the select narrows instead of running off the screen.
+  width: 100%;
+  max-width: 560px;
+  table-layout: fixed;
+
+  td:first-child {
+    width: 40%;
+  }
+
+  td + td {
+    padding-right: 0;
+  }
+
+  .Select,
+  .Select-input {
+    width: 100%;
+  }
+}
+
+.MarqueeIgdbFields {
+  display: grid;
+  // min(): one column on phones instead of two that run off the screen.
+  grid-template-columns: repeat(auto-fit, minmax(~"min(220px, 100%)", 1fr));
+  width: 100%;
+  gap: 8px;
+  max-width: 560px;
+}
+
+// Phones: tag name above its select, so long source names fit.
+@media (max-width: 767px) {
+  .MarqueeTagSources-table {
+    tr,
+    td {
+      display: block;
+    }
+
+    td:first-child {
+      width: auto;
+      padding: 10px 0 4px;
+    }
+  }
+}
