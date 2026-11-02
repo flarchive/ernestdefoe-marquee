@@ -1,0 +1,59 @@
+{
+    "name": "ernestdefoe/marquee",
+    "description": "Link discussions to movies, TV shows (down to the episode) and games, shown in the discussion hero. Data from TMDB and IGDB.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ernest Defoe",
+            "email": "ernestdefoe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "flarum/tags": "^2.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Marquee",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-film",
+                "backgroundColor": "#0d253f",
+                "color": "#01b4e4"
+            }
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ernestdefoe\\Marquee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ernestdefoe\\Marquee\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "flarum/phpstan": "^2.0",
+        "flarum/testing": "^2.0"
+    },
+    "scripts": {
+        "test": [
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse:phpstan": "phpstan analyse"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "analyse:phpstan": "Run static analysis"
+    }
+}
